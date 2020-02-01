@@ -2,14 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:gallery/GalleryItem.dart';
 import 'package:gallery/API.dart';
 
-final int STATUS_LOADING = 0;
-
 class ListPhotos extends StatefulWidget {
   @override
   createState() => new ListPhotosState();
 }
 
 class ListPhotosState extends State<ListPhotos> {
+  static const int STATUS_LOADING = 0;
   int _status;
   API api = new API();
   @override
